@@ -7,5 +7,21 @@
       "age": 38,
       "id": 1
     }
+  ],
+  "posts": [
+    {
+      "title": "meu primeiro post",
+      "content": "esse é o meu primeiro post",
+      "userId": 1,
+      "id": 1
+    }
+  ],
+  "privatePosts": [
+    {
+      "title": "meu primeiro post privado",
+      "content": "esse é meu primeiro post privado",
+      "userId": 1,
+      "id": 1
+    }
   ]
 }

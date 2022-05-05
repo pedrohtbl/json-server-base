@@ -22,3 +22,40 @@ POST /login <br/>
 POST /signin
 
 Qualquer um desses 2 endpoints pode ser usado para realizar login com um dos usuários cadastrados na lista de "Users"
+
+### Posts
+rota privada - precisa de autenticação com o token
+
+POST/posts <br/>
+
+esse endpoint pode ser usado por um usuario logado para ele fazer um post que publico, onde qualquer pessoa pode ver, mas somente o proprio usuario pode modificar o post.
+
+o corpo da requisição deve ser no seguinte formato:
+{
+    "title": "titulo para o post",
+    "content": "conteudo do post",
+    "userId": id do usuario
+}
+
+rota publica 
+
+GET/posts <br/>
+
+esse endpoint pode ser usado para listar todos os posts publicos que qualquer usuario pode ver.
+
+
+### Posts Privados
+rota privada - precisa de autenticação com o token
+
+POST/privatePosts <br/>
+
+esse endpoint pode ser usada um usuario logado para ele fazer um post que privado, onde somente outros usuarios logados podem ver e somente o proprio dono pode modificar o post.
+
+rota privada - precisa de autenticação com o token
+
+GET/privatePosts <br/>
+
+esse endpoint pode ser usado para listar todos os posts privados que qualquer usuario logado pode ver.
+
+
+
